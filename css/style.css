@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1cb46d;
+}
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: 1vh;
+    grid-template-areas: 
+                    "h h h"
+                    "n m m"
+                    "n m m"
+                    "f f f";
+    grid-template-rows: 100px 300px 1fr 100px;
+    grid-template-columns: 200px 1fr;
+}
+header {
+    background-color: #296444;
+    grid-area: h;
+}
+nav {
+    background-color: #1caa0f52;
+    grid-area: n;
+}
+main {
+    background-color: #1caa0f;
+    grid-area: m;
+}
+footer {
+    background-color: #296444;
+    grid-area: f;
+}
+header > .logo {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    grid-template-rows: 50px;
+}
+.logo-img {
+    display: block;
+    min-height: 25px;
+    width: 50px;
+    background-color: rgb(22, 100, 39);
+}
+header > .logo span {
+}
